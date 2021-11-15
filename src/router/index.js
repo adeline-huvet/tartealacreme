@@ -27,6 +27,11 @@ const routes = [
     // component: Page2
     component: () => import(/* webpackChunkName: "page1" */ '../views/Page2.vue'),
   },
+  {
+    path: "/list",
+    name: "List",
+    component: () => import(/* webpackChunkName: "List" */ '../views/List.vue'),
+  }
 ]
 
 const router = new VueRouter({

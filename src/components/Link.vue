@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li v-for="link in links" :key="link.title">
+      <li v-for="link in links" v-bind:key="link.title">
         <router-link :to="link.route">
           {{ link.title }}
         </router-link>
@@ -28,6 +28,10 @@ export default {
         {
           title: "Page2",
           route: "/page2"
+        },
+        {
+          title: "Liste",
+          route: "/list"
         }
       ]
     };

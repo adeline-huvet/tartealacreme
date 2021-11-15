@@ -12,6 +12,7 @@
     <p>
         <button v-on:click.prevent="increment"> + </button>
         <button v-on:click.prevent="decrement"> - </button>
+        <button v-on:click="alert">Bonjour</button>
     </p>
     </div>
 </template>
@@ -41,6 +42,9 @@ export default {
         },
         decrement(){
             this.$store.commit('setTotalFromVueX', this.totalGeneral -= 1)
+        },
+        alert(){
+            window.alert('Heyyyyyy')
         }
     }
 }
