@@ -77,7 +77,7 @@ export default {
             
         },
         supprimer(id){
-            this.$delete(this.cart, id)
+            this.cart.splice(this.cart, id)
         }
 
     }

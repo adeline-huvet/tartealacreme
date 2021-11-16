@@ -32,6 +32,10 @@ export default {
         {
           title: "Liste",
           route: "/list"
+        },
+        {
+          title: "Formulaire",
+          route: "/formulaire"
         }
       ]
     };
